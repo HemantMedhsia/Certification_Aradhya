@@ -24,7 +24,6 @@ function App() {
         <>
           <Cursor />
           <Starter />
-          <MainPageComponent2/>
         </>
       )}
     </div>

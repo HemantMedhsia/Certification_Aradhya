@@ -196,3 +196,10 @@
     opacity: 0;
   }
 }
+
+/* text */
+
+.outline-text {
+  -webkit-text-stroke: 3px teal;
+  color: transparent;
+}
