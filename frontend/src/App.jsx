@@ -3,30 +3,33 @@ import Cursor from "./common/Cursor";
 import Starter from "./pages/Starter";
 import Loader from "./common/Loader"; // Import the Loader component
 import MainPageComponent2 from "./pages/MainPageComponent2";
+import Footer from "./layout/Footer";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading process, replace this with actual data fetching if necessary
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Set a 2 second delay for the loader to disappear
+    }, 2000); 
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
     <div className="">
       {loading ? (
-        <Loader /> // Show loader when loading is true
+        <Loader /> 
       ) : (
         <>
           <Cursor />
           <Starter />
           <MainPageComponent2/>
+          <Footer/>
         </>
       )}
+      
     </div>
   );
 }
