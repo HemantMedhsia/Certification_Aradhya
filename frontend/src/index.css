@@ -195,6 +195,13 @@
   }
 }
 
+/* text */
+
+.outline-text {
+  -webkit-text-stroke: 3px teal;
+  color: transparent;
+}
+
 @layer utilities {
   .writing-mode-vertical {
     writing-mode: vertical-rl;
